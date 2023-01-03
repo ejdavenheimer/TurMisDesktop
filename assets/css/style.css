@@ -192,25 +192,42 @@ footer{
 /*-------------------------------------- 
 ------------ ANIMALES STYLE ------------
 ---------------------------------------*/
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  max-width: 135%;
+  max-height: 130%;
+  transform: translateX(calc((100% - 100vw) / 2));
+  z-index: -2;
+}
+
 .main__animales{
 	grid-row: 2 / 3;
 	grid-column: 1 / 2;
-	background-color: #00000099;
+
+	border-top: 2px #FFF solid;
+	border-bottom: 2px #FFF solid;	
 }
 .main__animales__title{
 	padding:  2% 3%;
 	font-size: 2rem;
-	background-color: #FFB417;
+	background-color: #1AA51A ;
 }
 .main__animales__box__container{
 	display: flex;
 	align-items: center;
 	margin: 0 4%;
-	background-color: #222;
-	color: #fff;
-	border-bottom: 2px #aaa solid;
+	background-color: #222222EE;
+	color: #FFF;
+	border-bottom: 2px #AAA solid;
 	height: 85vh;
 	font-family: 'Open Sans';
+}
+
+
+.main__animales__box__container:last-child{
+	border: none;
 }
 .main__animales__box__container__foto{
 	max-width: 45%;
