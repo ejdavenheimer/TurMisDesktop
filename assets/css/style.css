@@ -199,15 +199,86 @@ footer{
 }
 .main__culture__box{
 	padding:  1rem 1rem;
-	background-color: #222;
+	background-color: #222222DD;
 	color: #fff;
 
 	font-family: 'Open Sans';
 }
+.boxCulture{
+	display: grid;
+	grid-template-rows: 100vh;
+	grid-template-columns: 1fr 1fr;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.box__contenido{
+	grid-column: 1/2;
+	grid-row: 1/2;
+	background-color: #44444466;
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
 
-.articles__format{
-	padding: 1% 2%;
-	border-bottom: 2px #DDD solid;
+	padding: 20px 30px	 20px 30px;
+}
+.box__historia{
+	grid-column: 2/3;
+	grid-row: 1/2;
+	background-color: #33333366;
+	padding: 20px 30px	 20px 30px;
+}
+
+.historia__title{
+	margin-bottom: 25px;
+	font-size: 2rem;
+	border-bottom: 2px solid #FFF;
+	border-width: ;
+	display: inline-block;
+	letter-spacing: 2px;
+}
+
+.historia__parr{
+	margin-bottom: 10px;
+}
+.contenido__formato{
+	width: 30vw;
+	height: 40vh;
+}
+.contenido__formato img{
+	width: 100%;
+}
+.contenido__bandera{
+	margin-bottom: 30px;
+}
+.contenido__formato video{
+	width: 100%;
+	height: 100%;
+}
+
+/* COMIDAS */
+.poroto{
+	width: 100%;
+	height: 300px;
+	background-image: url('../../img/Comidas/feijoada.jpg');
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 30px;
+}
+.reviro{
+	width: 100%;
+	height: 300px;
+	background-image: url('../../img/Comidas/reviro.jpg');
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 30px;
+}
+
+.tortafrita{
+	width: 100%;
+	height: 300px;
+	background-image: url('../../img/Comidas/tortafrita.jpg');
+	background-size: cover;
+	background-position: center;
 }
 
 /*-------------------------------------- 
@@ -301,12 +372,4 @@ footer{
 	display: inline-block;
 	padding: 30px;
 	background-color: #111;
-}
-
-/* BOOTSTRAP CAROUSEL */
-.carousel-item{
-	height: 11.25rem;
-}
-.carousel-caption{
-	background-color: #33333366;
 }
