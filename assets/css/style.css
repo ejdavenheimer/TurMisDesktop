@@ -386,29 +386,135 @@ footer{
 /*-------------------------------------- 
 ------------ LUGARES STYLE ------------
 ---------------------------------------*/
+
 .main__lugar{
 	grid-row: 2 / 3;
 	grid-column: 1 / 2;
-	background-color: #00000099;
 }
-.main__lugar__title{
-	padding:  2% 3%;
-	font-size: 2rem;
-	background-color: #FFB417;
+
+.main__lugar__container{
+	background-color: #22222299;;
+
 }
-.main__lugar__box{
+
+.container__cards{
+
+}
+
+.cards{
+	padding: 40px 0;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	margin: 0 4%;
-	padding:  1rem 1rem;
-	background-color: #222;
+	row-gap: 30px;
+	justify-content: space-evenly;
 }
-.main__lugar__box__foto{
-	display: inline-block;
-	width: 300px;
-	height: 300px;
-	object-fit: cover;
+
+.card__format{
+	width: 350px;
+	height: 420px;
+	background-color: #DDD;
+	border-radius: 3%;
+	
+}
+
+.card__lugar1{
+	background-image: url(../../img/Lugares/Lugares1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.card__lugar2{
+	background-image: url(../../img/Lugares/Lugares5.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.card__lugar3{
+	background-image: url(../../img/Lugares/Lugares3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.card__shadow{
+	background-color: #33333377;
+	width: 100%;
+	height: 100%;
+	transition: background-color 0.4s;
+}
+
+.card__shadow:hover{
+	background-color: transparent;
+}
+
+.info__card{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 25px;
+	padding-left: 10px;
+	color: #FFF;
+}
+
+.city__card{
+	font-size: 0.9em;
+	text-transform: uppercase;
+	font-weight: lighter;
+	line-height: 1.5em;
+}
+
+.place__card{
+	font-size: 1.4em;
+	line-height: 1.2em;
+	letter-spacing: 0.5px;
+}
+
+.card__reverse{
+	display: none;
+	padding: 10px;
+	background-image: none;
+	display: flex;
+	flex-direction: column;
+	row-gap: 7px;
+}
+
+.card__map{
+	height: 30%;
+}
+
+.card__info{
+	height: 68%;
+	background-color: #33333322;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 10px
+}
+
+.info__title{
+	line-height: 2.3em;
+	font-size: 1.5em;
+}
+
+.info__text{
+	font-size: 0.8em;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	margin-bottom: 5px;
+}
+
+.btn__place{
+	width: 120px;
+	height: 30px;
+	border: 2px #FFF solid;
+	background-color: #333;
+	color: #FFF;
+	border-radius: 5px;
+	margin-top: 5px;
+}
+
+.btn__place:hover{
+	border: 2px var(--color3) solid;
+	color: #1AA51A;
+	background-color: #FFF;
 }
 /*-------------------------------------- 
 ------------ CONTACTO STYLE ------------

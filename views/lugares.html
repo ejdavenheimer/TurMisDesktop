@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
-    <meta name="viewport" content="width-device-width, initial-scale-1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Vinculación con hoja de CSS -->
     <link rel="stylesheet" href="../assets/css/style.css">
     <!-- Nombre que figura en la pestaña del navegador -->
     <title>Turismo Misiones</title>
     <!-- Icono que figura en la pestaña del navegador -->
     <link rel="icon" href="../img/Logo.ico">
-    <!-- Tipo de letda -->
+    <!-- Tipo de letra -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
   </head>
@@ -23,8 +23,7 @@
         <div class="header__box">
             <!-- Título y logo -->
             <div class="header__title">
-              <img class="header__title__img" src="../img/logo.png" alt="logo de la página">
-              <h1 class="header__title__format">Turismo Misiones</h1>
+              <h1 class="header__title__format">Tur<span style="color:#3ED13E">Mis</span></h1>
             </div>
 
           <!-- Menú -->
@@ -40,20 +39,87 @@
         </div> 
       </header>
 
-      <section class="main__lugar">
-        <div class="main__lugar__title">
+      <!-- Tabla solicitada en el ejercicio -->
+    <section class="main__lugar bodyPages">
+      <div class="titlePages">
           <h2>LUGARES</h2>
-        </div>
+      </div>
 
-        <div class="main__lugar__box">
-          <img class="main__lugar__box__foto" src="../img/Lugares1.jpg">
-          <img class="main__lugar__box__foto" src="../img/Lugares2.jpg">
-          <img class="main__lugar__box__foto" src="../img/Lugares3.jpg">
-          <img class="main__lugar__box__foto" src="../img/Lugares4.jpg">
-          <img class="main__lugar__box__foto" src="../img/Lugares5.jpg">
+      <div class="main__lugar__container bodyPages__content">
+        <div class="container__cards">
+          <div class="cards">
+            <div class="card__format card__lugar1">
+              <div class="card__shadow">
+                <div class="info__card">
+                  <h4 class="city__card">Iguazú</h4>
+                <h4 class="place__card">Garganta del diablo</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="card__format card__lugar2">
+              <div class="card__shadow">
+                <div class="info__card">
+                  <h4 class="city__card">Posadas</h4>
+                <h4 class="place__card">Costanera</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="card__format card__lugar3">
+              <div class="card__shadow">
+                <div class="info__card">
+                  <h4 class="city__card">San Ignacio</h4>
+                <h4 class="place__card">Ruinas de San Ignacio</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="card__format card__reverse">
+              <div class="card__info">
+                <h4 class="info__title">Garganta del diablo</h4>
+                <p class="info__text">La Garganta del Diablo es la más ancha de las 275 cataratas que componen el conjunto conocido como cataratas del Iguazú. Con sus 80 metros de alto y su caída ininterrumpida de agua, es la protagonista indiscutible de toda visita a las cataratas del Iguazú. Las cataratas delimitan la frontera entre Brasil y Argentina.
+                  </p>
+                  <p class="info__text">
+                  A la entrada del Parque Nacional del Iguazú se cogen los autobuses de enlace que van hasta el circuito de las cataratas, que discurre por un camino enmaderado.</p>
+                  <button class="btn__place">Ver página oficial</button>
+              </div>
+              <div class="card__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.281870165656!2d-54.43934362563603!3d-25.695089893431376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f6ea09a1f64ec1%3A0x348a6807de70ac63!2sGarganta%20do%20Diabo!5e0!3m2!1ses!2sar!4v1684875835672!5m2!1ses!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+
+            <div class="card__format card__reverse">
+              <div class="card__info">
+                <h4 class="info__title">COstanera de Posadas</h4>
+                <p class="info__text">Costanera Posadas es una ruta 3.1 km (de 4.500 pasos) ubicada cerca de Posadas, Provincia de Misiones, Argentina. Esta ruta tiene una elevación cercana a 36 m y tiene una calificación de fácil. Usted puede encontrar más rutas como esta en la aplicación Pacer.
+                  </p>
+                  <p class="info__text">Es una de las zonas más pintorescas de la ciudad, y en ella se realiza la Estudiantina más famosa de toda la provincia de Misiones. La avenida está dividida en cuatro tramos, que se fueron inaugurando en etapas.</p>
+                  <button class="btn__place">Ver página oficial</button>
+              </div>
+              <div class="card__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3542.1834525428803!2d-55.89484522555451!3d-27.401205613789404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457bee2dfb08d2f%3A0x49c6ba8edb0c56b6!2sCostanera%20Sur%2C%20Posadas%2C%20Misiones!5e0!3m2!1ses!2sar!4v1684875883271!5m2!1ses!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+
+            <div class="card__format card__reverse">
+              <div class="card__info">
+                <h4 class="info__title">Ruinas de San Ignacio</h4>
+                <p class="info__text">Las Ruinas de San Ignacio se remontan a los siglos XVI y XVII, pese al paso del tiempo la mayor parte de los muros siguen en pie. Además del acceso a las misiones jesuíticas, también se puede disfrutar de un espectáculo de imagen y sonido.
+                  </p>
+                  <p class="info__text">
+                  Las Ruinas de San Ignacio es unos de los lugares tradicionales para conocer en la provincia de Misiones, no solo por su historia sino además por lo bello de transitar por las rutas misioneras y apreciar sus paisajes.</p>
+                  <button class="btn__place">Ver página oficial</button>
+              </div>
+              <div class="card__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6229.162692660933!2d-55.532726285481154!3d-27.255240748407903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457dfd38d5484e1%3A0x6eac75db9ae60e84!2sRuinas%20de%20San%20Ignacio%20Min%C3%AD!5e0!3m2!1ses!2sar!4v1684871816473!5m2!1ses!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
         </div>
-        
-      </section>
+      </div>
+      
+    </section>
 
       <footer>
         <div class="footer__box">
@@ -68,7 +134,7 @@
             <a href="https://www.instagram.com">
               <img class="footer__box__redes__icon" src="https://img.icons8.com/ios-glyphs/24/ffffff/instagram-new.png"/>
             </a>
-           </div>
+          </div>
         </div>
       </footer>
     </div>
