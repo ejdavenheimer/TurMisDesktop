@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
-    <meta name="viewport" content="width-device-width, initial-scale-1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Vinculación con hoja de CSS -->
     <link rel="stylesheet" href="../assets/css/style.css">
     <!-- Nombre que figura en la pestaña del navegador -->
     <title>Turismo Misiones</title>
     <!-- Icono que figura en la pestaña del navegador -->
     <link rel="icon" href="../img/Logo.ico">
-    <!-- Tipo de letda -->
+    <!-- Tipo de letra -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
   </head>
@@ -23,8 +23,7 @@
         <div class="header__box">
             <!-- Título y logo -->
             <div class="header__title">
-              <img class="header__title__img" src="../img/logo.png" alt="logo de la página">
-              <h1 class="header__title__format">Turismo Misiones</h1>
+              <h1 class="header__title__format">Tur<span style="color:#3ED13E">Mis</span></h1>
             </div>
 
           <!-- Menú -->
@@ -40,52 +39,40 @@
         </div> 
       </header>
 
-      <section class="main__contact">
-        <div class="main__contact__title">
+      <!-- Tabla solicitada en el ejercicio -->
+    <section class="main__contacto bodyPages">
+      <div class="titlePages">
           <h2>CONTACTO</h2>
-        </div>
-        <div class="main__contact__box">
-          <div class="container-formulario">
-            <form action="">
-              <label for="nombre">Nombre:</label>
-              <input type="text" placeholder="Ingrese su Nombre" id="nombre">
-              <br>
-              <br>
-              <label for="apellido">Apellido:</label>
-              <input type="text" placeholder="Ingrese su Apellido" id="apellido"> 
-              <br>
-              <br>
-              <label for="email">Ingrese su mail</label>   
-              <input type="email">
-              <br>
-              <br>
-              Estado Civil 
-                           <select name="" id="">   
-                              <option value="casado">Casado</option>  
-                              <option value="soltero">Soltero</option>
-                              <option value="viudo">Viudo</option>
-                           </select>
-              <br>
-              <br>
+      </div>
 
-              ¿Desea recibir newsletter?
-              <input type="checkbox">
-              <br>
-              <br>
-              Comentario:
-              <br>
-              <textarea name="" id="" cols="100" rows="10"></textarea>
-              <br>
-              <br>
-              <input type="submit" value="Enviar">
-              <br>
-              <br>
-              <input type="reset" value="Limpiar formulario">  
-            </form>
-          </div>
+      <div class="main__contacto__container bodyPages__content">
+        <div class="form__container">
+          <form class="form__style" action="https://formsubmit.co/ejdavenheimer@gmail.com" method="POST">
+            <h3 class="form__title">Completá el formulario</h3>
+            <div class="input__group">
+              <label class="form__label" for="name">Nombre</label>
+              <input class="form__input" type="text" name="name" id="name" placeholder="Escribe su nombre aquí">
+  
+              <label class="form__label" for="lastName">Apellido</label>
+              <input class="form__input" type="text" name="lastName" id="lastName" placeholder="Escribe su apellido aquí">
+              
+              <label class="form__label" for="email">Correo electrónico</label>
+              <input class="form__input" type="email" name="email" id="email" placeholder="Ingrese correo, example@mail.com">
+  
+              <label class="form__label" for="message">Mensaje</label>
+              <textarea class="form__input" name="message" id="message" cols="30" rows="5" placeholder="Escriba su consulta aquí"></textarea>
+  
+              <input class="btn" type="submit" value="Enviar">
+  
+              <input type="hidden" name="_next" value="http://127.0.0.1:5500/views/contacto.html">
+              <input type="hidden" name="_captcha" value="false">
+            </div>
+          </form>
         </div>
         
-      </section>
+      </div>
+      
+    </section>
 
       <footer>
         <div class="footer__box">
@@ -100,7 +87,7 @@
             <a href="https://www.instagram.com">
               <img class="footer__box__redes__icon" src="https://img.icons8.com/ios-glyphs/24/ffffff/instagram-new.png"/>
             </a>
-           </div>
+          </div>
         </div>
       </footer>
     </div>
